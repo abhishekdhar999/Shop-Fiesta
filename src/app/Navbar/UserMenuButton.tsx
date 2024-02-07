@@ -14,7 +14,7 @@ export default function UserMenuButton({session}: UserMenuButtonProps){
             <label tabIndex={0} className="btn-ghost btn-circle btn" htmlFor="">
 
             {user ? (
-                <Image src={user?.image || ProfilePicPlaceHolder}
+                <Image src={user?.image || ""}
                 alt="profile picture"
                 width={40}
                 height={40}

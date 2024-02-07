@@ -1,12 +1,15 @@
-/** @type {import('next').NextConfig} */
+ /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
         remotePatterns: [{hostname: "images.unsplash.com"},
-    {hostname:"lh3.googleusercontent.com"}]
+    {hostname:"lh3.googleusercontent.com"},
+{hostname:"static.nike.com"}]
     },
     experimental:{
         serverActions:true
     }
 }
 
-module.exports = nextConfig
+const withVideos = require('next-videos')
+
+module.exports = withVideos(nextConfig)

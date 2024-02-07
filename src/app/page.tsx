@@ -26,9 +26,11 @@ export default async function Home({searchParams:{page="1"}}:HomeProps) {
   })
   return(
 <>
-<div className='flex flex-row items-center gap-4'>
-  <Menubar/>
-</div>
+
+<div className=''>
+    <video className='rounded-3xl' src={require('../../public/video1.mp4')} autoPlay muted loop/>
+  </div>
+
     <div className='flex flex-col items-center'>
 {currentPage ===1 && (
       <div className='hero rounded-xl bg-base-200'>
